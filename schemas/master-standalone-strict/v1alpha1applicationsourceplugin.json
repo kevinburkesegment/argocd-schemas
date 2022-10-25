@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "title": "ApplicationSourcePlugin holds options specific to config management plugins",
+  "properties": {
+    "env": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/applicationv1alpha1EnvEntry"
+      }
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

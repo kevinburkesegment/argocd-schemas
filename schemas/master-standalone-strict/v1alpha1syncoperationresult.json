@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "title": "SyncOperationResult represent result of sync operation",
+  "properties": {
+    "resources": {
+      "type": "array",
+      "title": "Resources contains a list of sync result items for each individual resource in a sync operation",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1ResourceResult"
+      }
+    },
+    "revision": {
+      "type": "string",
+      "title": "Revision holds the revision this sync operation was performed to"
+    },
+    "source": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSource"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

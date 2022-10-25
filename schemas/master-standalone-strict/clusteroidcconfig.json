@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "cliClientID": {
+      "type": "string"
+    },
+    "clientID": {
+      "type": "string"
+    },
+    "idTokenClaims": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "_definitions.json#/definitions/oidcClaim"
+      }
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

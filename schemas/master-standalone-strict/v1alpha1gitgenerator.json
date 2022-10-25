@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "directories": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1GitDirectoryGeneratorItem"
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1GitFileGeneratorItem"
+      }
+    },
+    "repoURL": {
+      "type": "string"
+    },
+    "requeueAfterSeconds": {
+      "type": "string",
+      "format": "int64"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "template": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetTemplate"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

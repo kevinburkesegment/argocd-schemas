@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "title": "ListGenerator include items info",
+  "properties": {
+    "elements": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1JSON"
+      }
+    },
+    "template": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetTemplate"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

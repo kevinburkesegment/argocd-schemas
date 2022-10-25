@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "title": "ResourceStatus holds the current sync and health status of a resource\nTODO: describe members of this type",
+  "properties": {
+    "group": {
+      "type": "string"
+    },
+    "health": {
+      "$ref": "_definitions.json#/definitions/v1alpha1HealthStatus"
+    },
+    "hook": {
+      "type": "boolean"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "requiresPruning": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string"
+    },
+    "syncWave": {
+      "type": "string",
+      "format": "int64"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

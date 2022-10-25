@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "title": "ResourceOverride holds configuration to customize resource diffing and health assessment\nTODO: describe the members of this type",
+  "properties": {
+    "actions": {
+      "type": "string"
+    },
+    "healthLua": {
+      "type": "string"
+    },
+    "ignoreDifferences": {
+      "$ref": "_definitions.json#/definitions/v1alpha1OverrideIgnoreDiff"
+    },
+    "knownTypeFields": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1KnownTypeField"
+      }
+    },
+    "useOpenLibs": {
+      "type": "boolean"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,46 @@
+{
+  "description": "SyncOperation contains details about a sync operation.",
+  "type": "object",
+  "properties": {
+    "dryRun": {
+      "type": "boolean",
+      "title": "DryRun specifies to perform a `kubectl apply --dry-run` without actually performing the sync"
+    },
+    "manifests": {
+      "type": "array",
+      "title": "Manifests is an optional field that overrides sync source with a local directory for development",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prune": {
+      "type": "boolean",
+      "title": "Prune specifies to delete resources from the cluster that are no longer tracked in git"
+    },
+    "resources": {
+      "type": "array",
+      "title": "Resources describes which resources shall be part of the sync",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1SyncOperationResource"
+      }
+    },
+    "revision": {
+      "description": "Revision is the revision (Git) or chart version (Helm) which to sync the application to\nIf omitted, will use the revision specified in app spec.",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSource"
+    },
+    "syncOptions": {
+      "type": "array",
+      "title": "SyncOptions provide per-sync sync-options, e.g. Validate=false",
+      "items": {
+        "type": "string"
+      }
+    },
+    "syncStrategy": {
+      "$ref": "_definitions.json#/definitions/v1alpha1SyncStrategy"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "title": "ApplicationSetStatus defines the observed state of ApplicationSet",
+  "properties": {
+    "conditions": {
+      "type": "array",
+      "title": "INSERT ADDITIONAL STATUS FIELD - define observed state of cluster\nImportant: Run \"make\" to regenerate code after modifying this file",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetCondition"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

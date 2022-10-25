@@ -1,0 +1,22 @@
+{
+  "description": "ApplicationSetSpec represents a class of application set state.",
+  "type": "object",
+  "properties": {
+    "generators": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetGenerator"
+      }
+    },
+    "goTemplate": {
+      "type": "boolean"
+    },
+    "syncPolicy": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetSyncPolicy"
+    },
+    "template": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetTemplate"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

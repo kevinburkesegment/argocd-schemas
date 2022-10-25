@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "title": "RepoAppDetailsQuery contains query information for app details request",
+  "properties": {
+    "appName": {
+      "type": "string"
+    },
+    "appProject": {
+      "type": "string"
+    },
+    "source": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSource"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

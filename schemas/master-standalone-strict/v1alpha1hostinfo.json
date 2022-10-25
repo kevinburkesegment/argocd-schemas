@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "title": "HostInfo holds host name and resources metrics\nTODO: describe purpose of this type\nTODO: describe members of this type",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "resourcesInfo": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1HostResourceInfo"
+      }
+    },
+    "systemInfo": {
+      "$ref": "_definitions.json#/definitions/v1NodeSystemInfo"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "title": "RepoAppDetailsResponse application details",
+  "properties": {
+    "directory": {
+      "$ref": "_definitions.json#/definitions/repositoryDirectoryAppSpec"
+    },
+    "helm": {
+      "$ref": "_definitions.json#/definitions/repositoryHelmAppSpec"
+    },
+    "kustomize": {
+      "$ref": "_definitions.json#/definitions/repositoryKustomizeAppSpec"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

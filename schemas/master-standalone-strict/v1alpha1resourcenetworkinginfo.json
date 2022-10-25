@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "title": "ResourceNetworkingInfo holds networking resource related information\nTODO: describe members of this type",
+  "properties": {
+    "externalURLs": {
+      "description": "ExternalURLs holds list of URLs which should be available externally. List is populated for ingress resources using rules hostnames.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ingress": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1LoadBalancerIngress"
+      }
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "targetLabels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "targetRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1ResourceRef"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

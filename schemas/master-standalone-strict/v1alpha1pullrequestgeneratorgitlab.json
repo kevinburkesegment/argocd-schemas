@@ -1,0 +1,29 @@
+{
+  "description": "PullRequestGeneratorGitLab defines connection info specific to GitLab.",
+  "type": "object",
+  "properties": {
+    "api": {
+      "description": "The GitLab API URL to talk to. If blank, uses https://gitlab.com/.",
+      "type": "string"
+    },
+    "labels": {
+      "type": "array",
+      "title": "Labels is used to filter the MRs that you want to target",
+      "items": {
+        "type": "string"
+      }
+    },
+    "project": {
+      "description": "GitLab project to scan. Required.",
+      "type": "string"
+    },
+    "pullRequestState": {
+      "type": "string",
+      "title": "PullRequestState is an additional MRs filter to get only those with a certain state. Default: \"\" (all states)"
+    },
+    "tokenRef": {
+      "$ref": "_definitions.json#/definitions/v1alpha1SecretRef"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

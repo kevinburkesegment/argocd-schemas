@@ -1,0 +1,34 @@
+{
+  "description": "PullRequestGenerator defines a generator that scrapes a PullRequest API to find candidate pull requests.",
+  "type": "object",
+  "properties": {
+    "bitbucketServer": {
+      "$ref": "_definitions.json#/definitions/v1alpha1PullRequestGeneratorBitbucketServer"
+    },
+    "filters": {
+      "description": "Filters for which pull requests should be considered.",
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1PullRequestGeneratorFilter"
+      }
+    },
+    "gitea": {
+      "$ref": "_definitions.json#/definitions/v1alpha1PullRequestGeneratorGitea"
+    },
+    "github": {
+      "$ref": "_definitions.json#/definitions/v1alpha1PullRequestGeneratorGithub"
+    },
+    "gitlab": {
+      "$ref": "_definitions.json#/definitions/v1alpha1PullRequestGeneratorGitLab"
+    },
+    "requeueAfterSeconds": {
+      "description": "Standard parameters.",
+      "type": "string",
+      "format": "int64"
+    },
+    "template": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSetTemplate"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

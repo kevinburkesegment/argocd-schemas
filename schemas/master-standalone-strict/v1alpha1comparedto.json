@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "title": "ComparedTo contains application source and target which was used for resources comparison",
+  "properties": {
+    "destination": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationDestination"
+    },
+    "source": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ApplicationSource"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

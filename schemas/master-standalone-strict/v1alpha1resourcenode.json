@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "title": "ResourceNode contains information about live resource and its children\nTODO: describe members of this type",
+  "properties": {
+    "createdAt": {
+      "$ref": "_definitions.json#/definitions/v1Time"
+    },
+    "health": {
+      "$ref": "_definitions.json#/definitions/v1alpha1HealthStatus"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "info": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1InfoItem"
+      }
+    },
+    "networkingInfo": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ResourceNetworkingInfo"
+    },
+    "parentRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "_definitions.json#/definitions/v1alpha1ResourceRef"
+      }
+    },
+    "resourceRef": {
+      "$ref": "_definitions.json#/definitions/v1alpha1ResourceRef"
+    },
+    "resourceVersion": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}
